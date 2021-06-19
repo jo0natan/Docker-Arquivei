@@ -11,5 +11,21 @@ how to in Linux
 
 3 - sudo docker-compose up -d   (Attention:if you are using Debian distro do not use sudo. Use sudo only on Ubuntu)
 
-4 - docker exec -it laravel-arquivei php artisan migrate
+4 - sudo docker exec -it laravel-arquivei bash
 
+5 - composer install
+
+6 - php artisan migrate
+ 
+7 - php artisan db:seed
+
+will be runer 
+
+
+get nfe by key
+
+curl -X GET http://127.0.0.1:27000/arquivei?busca={chave}
+
+
+get all nfes
+curl -X GET http://127.0.0.1:27000/arquivei
