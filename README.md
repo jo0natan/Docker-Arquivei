@@ -10,6 +10,7 @@
 2 - cd Docker-Arquivei
 
 (Attention:if you are using Debian distro do not use sudo. Use sudo only on Ubuntu)
+
 3 - sudo docker-compose up -d   
 
 4 - sudo docker exec -it laravel-arquivei bash
