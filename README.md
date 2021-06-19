@@ -30,4 +30,5 @@ curl -X GET http://127.0.0.1:27000/arquivei?busca={chave}
 
 
 get all nfes
+
 curl -X GET http://127.0.0.1:27000/arquivei
