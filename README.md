@@ -19,6 +19,8 @@
  
 7 - php artisan db:seed
 
+8 - chmod 775 ./storage/framework/sessions/ && chmod 775 ./storage/logs/ && chmod 775 ./stor
+age/framework/cache/
 
 now you are all ready
 
