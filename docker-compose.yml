@@ -1,0 +1,35 @@
+version: "3.1"
+services:
+
+    mysql:
+      image: mysql:5.7
+      container_name: mysql-arquivei
+      working_dir: /application
+      volumes:
+        - .:/application
+      environment:
+        - MYSQL_ROOT_PASSWORD=rootpassword
+        - MYSQL_DATABASE=arquivei
+        - MYSQL_USER=userArquivei
+        - MYSQL_PASSWORD=mysqlpassword
+      ports:
+        - "27002:3306"
+
+    webserver:
+      image: nginx:alpine
+      container_name: nginx-arquivei
+      working_dir: /application
+      volumes:
+          - ./api:/application
+          - ./phpdocker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      ports:
+       - "27000:80"
+
+    php-fpm:
+      build: phpdocker/php-fpm
+      container_name: laravel-arquivei
+      working_dir: /application
+      volumes:
+        - ./api:/application
+        - ./phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/7.3/fpm/conf.d/99-overrides.ini
+
