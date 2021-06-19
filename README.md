@@ -20,17 +20,17 @@
 7 - php artisan db:seed
 
 8 -  chown www-data:www-data ./storage/framework/cache/data/ && chown www-data:www-data ./storage/logs/*
-age/framework/cache/
 
-now you are all ready
 
-# teste:
+Now you are all ready
 
-get nfe by key
+# tests:
+
+via curl get nfe by key
 
 curl -X GET http://127.0.0.1:27000/api/arquivei?busca={chave}
 
 
-get all nfes
+get all nfe's
 
 curl -X GET http://127.0.0.1:27000/api/arquivei
