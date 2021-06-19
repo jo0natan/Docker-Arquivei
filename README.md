@@ -3,7 +3,7 @@
  Laravel 7.30~
  PHP 7.3~
 
-how to in Linux
+#how to in Linux
 
 1 - git clone https://github.com/jo0natan/Docker-Arquivei.git
 
@@ -19,8 +19,10 @@ how to in Linux
  
 7 - php artisan db:seed
 
-will be runer 
 
+now you are all ready
+
+# teste:
 
 get nfe by key
 
