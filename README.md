@@ -28,9 +28,9 @@ now you are all ready
 
 get nfe by key
 
-curl -X GET http://127.0.0.1:27000/arquivei?busca={chave}
+curl -X GET http://127.0.0.1:27000/api/arquivei?busca={chave}
 
 
 get all nfes
 
-curl -X GET http://127.0.0.1:27000/arquivei
+curl -X GET http://127.0.0.1:27000/api/arquivei
